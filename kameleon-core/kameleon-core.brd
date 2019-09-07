@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.00625" altunitdist="inch" altunit="inch"/>
@@ -858,10 +859,14 @@ design rules under a new name.</description>
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
-<param name="checkGrid" value="0"/>
 <param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="0"/>
+<param name="checkStop" value="0"/>
+<param name="checkValues" value="0"/>
+<param name="checkNames" value="1"/>
+<param name="checkWireStubs" value="1"/>
+<param name="checkPolygonWidth" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -962,45 +967,124 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="C1" library="Kameleon" package="1608" value="0.1uF" x="6.35" y="9.2075" rot="R270"/>
-<element name="C10" library="Kameleon" package="1608" value="0.1uF" x="15.478125" y="31.27375" rot="R180"/>
-<element name="C11" library="Kameleon" package="2012" value="2.2uF" x="17.145" y="28.41625"/>
-<element name="C14" library="Kameleon" package="1608" value="0.1uF" x="5.715" y="28.2575" rot="R180"/>
-<element name="C2" library="Kameleon" package="1608" value="0.1uF" x="13.6525" y="7.62" rot="R270"/>
-<element name="C3" library="Kameleon" package="1608" value="0.1uF" x="6.429375" y="19.288125" rot="R270"/>
-<element name="C4" library="Kameleon" package="1608" value="0.1uF" x="17.383125" y="18.970625" rot="R90"/>
-<element name="C5" library="Kameleon" package="1608" value="0.1uF" x="12.461875" y="31.27375"/>
-<element name="C8" library="Kameleon" package="2012" value="4.7uF" x="17.065625" y="17.4625" rot="R90"/>
-<element name="C9" library="Kameleon" package="1608" value="0.1uF" x="10.239375" y="28.2575" rot="R180"/>
-<element name="CN1" library="Kameleon" package="1050170001" value="USB" x="11.43" y="33.85"/>
-<element name="CN3" library="Kameleon" package="1X13" value="LEFT" x="2.54" y="19.05" rot="R270"/>
-<element name="CN4" library="Kameleon" package="1X13" value="RIGHT" x="20.32" y="19.05" rot="R270"/>
-<element name="CN5" library="Kameleon" package="1X04" value="SWD" x="11.43" y="1.905" rot="R180"/>
-<element name="D1" library="Kameleon" package="SOD-123FL" value="MBR120VLSF" x="17.541875" y="33.02" rot="R90"/>
-<element name="F1" library="Kameleon" package="1608" value="MF-FSMF050X-2" x="13.97" y="31.27375" rot="R180"/>
-<element name="LED1" library="Kameleon" package="D1608" value="PWR" x="13.81125" y="25.7175" rot="R270"/>
-<element name="LED2" library="Kameleon" package="D1608" value="LED" x="13.81125" y="24.28875" rot="R270"/>
-<element name="R1" library="Kameleon" package="1608" value="10K" x="6.35" y="6.50875" rot="R90"/>
-<element name="R10" library="Kameleon" package="1608" value="100K" x="16.51" y="22.86" rot="R270"/>
-<element name="R11" library="Kameleon" package="1608" value="10K" x="6.35" y="31.27375"/>
-<element name="R12" library="Kameleon" package="1608" value="10K" x="7.858125" y="31.27375"/>
-<element name="R13" library="Kameleon" package="1608" value="10K" x="6.35" y="10.556875" rot="R90"/>
-<element name="R14" library="Kameleon" package="1608" value="10K" x="6.35" y="11.90625" rot="R90"/>
-<element name="R17" library="Kameleon" package="1608" value="1K" x="16.51" y="25.7175" rot="R90"/>
-<element name="R2" library="Kameleon" package="1608" value="10K" x="6.35" y="7.858125" rot="R90"/>
-<element name="R3" library="Kameleon" package="1608" value="10K" x="17.383125" y="15.954375" rot="R270"/>
-<element name="R4" library="Kameleon" package="1608" value="510" x="16.51" y="24.28875" rot="R270"/>
-<element name="R5" library="Kameleon" package="1608" value="10K" x="7.223125" y="28.2575" rot="R180"/>
-<element name="R6" library="Kameleon" package="1608" value="1K" x="13.81125" y="22.86" rot="R270"/>
-<element name="R7" library="Kameleon" package="1608" value="10K" x="8.73125" y="28.2575" rot="R180"/>
-<element name="R9" library="Kameleon" package="1608" value="22" x="10.874375" y="31.27375" rot="R180"/>
-<element name="R8" library="Kameleon" package="1608" value="22" x="9.36625" y="31.27375" rot="R180"/>
-<element name="SW1" library="Kameleon" package="NW3-A03-05" value="NRST" x="6.35" y="24.13" rot="R90"/>
-<element name="SW2" library="Kameleon" package="NW3-A03-05" value="BTN" x="10.00125" y="24.13" rot="R270"/>
-<element name="IC3" library="Kameleon" package="UFQFPN48" value="STM32F411CE/UFQFPN48" x="11.43" y="14.605" rot="R90"/>
-<element name="IC4" library="Kameleon" package="SOT25" value="AP2112K-3.3TRG1" x="14.44625" y="28.2575"/>
-<element name="Y1" library="Kameleon" package="R0" value="8MHz" x="10.00125" y="7.62" rot="R180"/>
-<element name="U$1" library="Kameleon" package="LOGO_VECTOR" value="" x="15.24" y="20.558125" rot="MR0"/>
+<element name="C1" library="Kameleon" package="1608" value="0.1uF" x="6.35" y="9.2075" smashed="yes" rot="R270">
+<attribute name="NAME" x="6.35" y="9.2075" size="0.4064" layer="25" align="center"/>
+</element>
+<element name="C10" library="Kameleon" package="1608" value="0.1uF" x="15.478125" y="31.27375" smashed="yes" rot="R180">
+<attribute name="NAME" x="15.478125" y="31.27375" size="0.4064" layer="25" rot="R270" align="center"/>
+</element>
+<element name="C11" library="Kameleon" package="2012" value="2.2uF" x="17.145" y="28.41625" smashed="yes">
+<attribute name="NAME" x="17.145" y="28.41625" size="0.4064" layer="25" rot="R90" align="center"/>
+</element>
+<element name="C14" library="Kameleon" package="1608" value="0.1uF" x="5.715" y="28.2575" smashed="yes" rot="R180">
+<attribute name="NAME" x="5.715" y="28.2575" size="0.4064" layer="25" rot="R270" align="center"/>
+</element>
+<element name="C2" library="Kameleon" package="1608" value="0.1uF" x="13.6525" y="7.62" smashed="yes" rot="R270">
+<attribute name="NAME" x="13.6525" y="7.62" size="0.4064" layer="25" align="center"/>
+</element>
+<element name="C3" library="Kameleon" package="1608" value="0.1uF" x="6.429375" y="19.288125" smashed="yes" rot="R270">
+<attribute name="NAME" x="6.429375" y="19.288125" size="0.4064" layer="25" align="center"/>
+</element>
+<element name="C4" library="Kameleon" package="1608" value="0.1uF" x="17.383125" y="18.970625" smashed="yes" rot="R90">
+<attribute name="NAME" x="17.383125" y="18.970625" size="0.4064" layer="25" rot="R180" align="center"/>
+</element>
+<element name="C5" library="Kameleon" package="1608" value="0.1uF" x="12.461875" y="31.27375" smashed="yes">
+<attribute name="NAME" x="12.461875" y="31.27375" size="0.4064" layer="25" rot="R90" align="center"/>
+</element>
+<element name="C8" library="Kameleon" package="2012" value="4.7uF" x="17.065625" y="17.4625" smashed="yes" rot="R90">
+<attribute name="NAME" x="17.065625" y="17.4625" size="0.4064" layer="25" rot="R180" align="center"/>
+</element>
+<element name="C9" library="Kameleon" package="1608" value="0.1uF" x="10.239375" y="28.2575" smashed="yes" rot="R180">
+<attribute name="NAME" x="10.239375" y="28.2575" size="0.4064" layer="25" rot="R270" align="center"/>
+</element>
+<element name="CN1" library="Kameleon" package="1050170001" value="USB" x="11.43" y="33.85" smashed="yes">
+<attribute name="NAME" x="11.43" y="35.755" size="1.27" layer="25" align="center"/>
+</element>
+<element name="CN3" library="Kameleon" package="1X13" value="LEFT" x="2.54" y="19.05" smashed="yes" rot="R270">
+<attribute name="NAME" x="4.3688" y="34.3662" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="-0.635" y="34.29" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="CN4" library="Kameleon" package="1X13" value="RIGHT" x="20.32" y="19.05" smashed="yes" rot="R270">
+<attribute name="NAME" x="22.1488" y="34.3662" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="17.145" y="34.29" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="CN5" library="Kameleon" package="1X04" value="SWD" x="11.43" y="1.905" smashed="yes" rot="R180">
+<attribute name="NAME" x="15.3162" y="0.0762" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="15.24" y="5.08" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="D1" library="Kameleon" package="SOD-123FL" value="MBR120VLSF" x="17.541875" y="33.02" smashed="yes" rot="R90">
+<attribute name="NAME" x="17.541875" y="33.02" size="0.4064" layer="25" rot="R90" align="center"/>
+</element>
+<element name="F1" library="Kameleon" package="1608" value="MF-FSMF050X-2" x="13.97" y="31.27375" smashed="yes" rot="R180">
+<attribute name="NAME" x="13.97" y="31.27375" size="0.4064" layer="25" rot="R270" align="center"/>
+</element>
+<element name="LED1" library="Kameleon" package="D1608" value="PWR" x="13.81125" y="25.7175" smashed="yes" rot="R270">
+<attribute name="NAME" x="13.81125" y="25.7175" size="0.254" layer="25" align="center"/>
+</element>
+<element name="LED2" library="Kameleon" package="D1608" value="LED" x="13.81125" y="24.28875" smashed="yes" rot="R270">
+<attribute name="NAME" x="13.81125" y="24.28875" size="0.254" layer="25" align="center"/>
+</element>
+<element name="R1" library="Kameleon" package="1608" value="10K" x="6.35" y="6.50875" smashed="yes" rot="R90">
+<attribute name="NAME" x="6.35" y="6.50875" size="0.4064" layer="25" rot="R180" align="center"/>
+</element>
+<element name="R10" library="Kameleon" package="1608" value="100K" x="16.51" y="22.86" smashed="yes" rot="R270">
+<attribute name="NAME" x="16.51" y="22.86" size="0.4064" layer="25" align="center"/>
+</element>
+<element name="R11" library="Kameleon" package="1608" value="10K" x="6.35" y="31.27375" smashed="yes">
+<attribute name="NAME" x="6.35" y="31.27375" size="0.4064" layer="25" rot="R90" align="center"/>
+</element>
+<element name="R12" library="Kameleon" package="1608" value="10K" x="7.858125" y="31.27375" smashed="yes">
+<attribute name="NAME" x="7.858125" y="31.27375" size="0.4064" layer="25" rot="R90" align="center"/>
+</element>
+<element name="R13" library="Kameleon" package="1608" value="10K" x="6.35" y="10.556875" smashed="yes" rot="R90">
+<attribute name="NAME" x="6.35" y="10.556875" size="0.4064" layer="25" rot="R180" align="center"/>
+</element>
+<element name="R14" library="Kameleon" package="1608" value="10K" x="6.35" y="11.90625" smashed="yes" rot="R90">
+<attribute name="NAME" x="6.35" y="11.90625" size="0.4064" layer="25" rot="R180" align="center"/>
+</element>
+<element name="R17" library="Kameleon" package="1608" value="1K" x="16.51" y="25.7175" smashed="yes" rot="R90">
+<attribute name="NAME" x="16.51" y="25.7175" size="0.4064" layer="25" rot="R180" align="center"/>
+</element>
+<element name="R2" library="Kameleon" package="1608" value="10K" x="6.35" y="7.858125" smashed="yes" rot="R90">
+<attribute name="NAME" x="6.35" y="7.858125" size="0.4064" layer="25" rot="R180" align="center"/>
+</element>
+<element name="R3" library="Kameleon" package="1608" value="10K" x="17.383125" y="15.954375" smashed="yes" rot="R270">
+<attribute name="NAME" x="17.383125" y="15.954375" size="0.4064" layer="25" align="center"/>
+</element>
+<element name="R4" library="Kameleon" package="1608" value="510" x="16.51" y="24.28875" smashed="yes" rot="R270">
+<attribute name="NAME" x="16.51" y="24.28875" size="0.4064" layer="25" align="center"/>
+</element>
+<element name="R5" library="Kameleon" package="1608" value="10K" x="7.223125" y="28.2575" smashed="yes" rot="R180">
+<attribute name="NAME" x="7.223125" y="28.2575" size="0.4064" layer="25" rot="R270" align="center"/>
+</element>
+<element name="R6" library="Kameleon" package="1608" value="1K" x="13.81125" y="22.86" smashed="yes" rot="R270">
+<attribute name="NAME" x="13.81125" y="22.86" size="0.4064" layer="25" align="center"/>
+</element>
+<element name="R7" library="Kameleon" package="1608" value="10K" x="8.73125" y="28.2575" smashed="yes" rot="R180">
+<attribute name="NAME" x="8.73125" y="28.2575" size="0.4064" layer="25" rot="R270" align="center"/>
+</element>
+<element name="R9" library="Kameleon" package="1608" value="22" x="10.874375" y="31.27375" smashed="yes" rot="R180">
+<attribute name="NAME" x="10.874375" y="31.27375" size="0.4064" layer="25" rot="R270" align="center"/>
+</element>
+<element name="R8" library="Kameleon" package="1608" value="22" x="9.36625" y="31.27375" smashed="yes" rot="R180">
+<attribute name="NAME" x="9.36625" y="31.27375" size="0.4064" layer="25" rot="R270" align="center"/>
+</element>
+<element name="SW1" library="Kameleon" package="NW3-A03-05" value="NRST" x="6.35" y="24.13" smashed="yes" rot="R90">
+<attribute name="NAME" x="6.35" y="24.13" size="0.6096" layer="25" rot="R90" align="center"/>
+</element>
+<element name="SW2" library="Kameleon" package="NW3-A03-05" value="BTN" x="10.00125" y="24.13" smashed="yes" rot="R270">
+<attribute name="NAME" x="10.00125" y="24.13" size="0.6096" layer="25" rot="R270" align="center"/>
+</element>
+<element name="IC3" library="Kameleon" package="UFQFPN48" value="STM32F411CE/UFQFPN48" x="11.43" y="14.605" smashed="yes" rot="R90">
+<attribute name="NAME" x="11.43" y="14.605" size="1.016" layer="25" rot="R90" align="center"/>
+</element>
+<element name="IC4" library="Kameleon" package="SOT25" value="AP2112K-3.3TRG1" x="14.44625" y="28.2575" smashed="yes">
+<attribute name="NAME" x="14.44625" y="28.2575" size="0.4064" layer="25" rot="R90" align="center"/>
+</element>
+<element name="Y1" library="Kameleon" package="R0" value="8MHz" x="10.00125" y="7.62" smashed="yes" rot="R180">
+<attribute name="NAME" x="10.00125" y="7.62" size="0.4064" layer="25" rot="R180" align="center"/>
+</element>
+<element name="U$1" library="Kameleon" package="LOGO_VECTOR" value="" x="15.24" y="20.558125" smashed="yes" rot="MR0"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -1651,6 +1735,13 @@ design rules under a new name.</description>
 <wire x1="17.946875" y1="31.75" x2="20.32" y2="31.75" width="0.4064" layer="1"/>
 </signal>
 </signals>
+<mfgpreviewcolors>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
+<mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
+<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
+<mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
+<mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
+</mfgpreviewcolors>
 </board>
 </drawing>
 <compatibility>
