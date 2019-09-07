@@ -1111,7 +1111,7 @@ DIN A4, landscape with location and doc. field</description>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="R6" library="Kameleon" deviceset="RES" device="" value="1K"/>
-<part name="R10" library="Kameleon" deviceset="RES" device="" value="100K"/>
+<part name="R10" library="Kameleon" deviceset="RES" device="" value="10K"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="R3" library="Kameleon" deviceset="RES" device="" value="10K"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
