@@ -1110,10 +1110,8 @@ DIN A4, landscape with location and doc. field</description>
 <part name="IC3" library="Kameleon" deviceset="STM32F411CE/UFQFPN48" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
-<part name="R6" library="Kameleon" deviceset="RES" device="" value="1K"/>
 <part name="R10" library="Kameleon" deviceset="RES" device="" value="10K"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
-<part name="R3" library="Kameleon" deviceset="RES" device="" value="10K"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="C8" library="Kameleon" deviceset="CAP" device="B" value="4.7uF"/>
@@ -1248,20 +1246,12 @@ ver 1.0</text>
 <instance part="+3V1" gate="G$1" x="40.64" y="139.7" smashed="yes">
 <attribute name="VALUE" x="38.1" y="134.62" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R6" gate="G$1" x="68.58" y="35.56" smashed="yes" rot="R90">
-<attribute name="NAME" x="67.0814" y="31.75" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="71.882" y="31.75" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="R10" gate="G$1" x="68.58" y="20.32" smashed="yes" rot="R90">
 <attribute name="NAME" x="67.0814" y="16.51" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="71.882" y="16.51" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND2" gate="1" x="68.58" y="12.7" smashed="yes">
 <attribute name="VALUE" x="66.04" y="10.16" size="1.778" layer="96"/>
-</instance>
-<instance part="R3" gate="G$1" x="76.2" y="35.56" smashed="yes" rot="R90">
-<attribute name="NAME" x="74.7014" y="31.75" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="79.502" y="31.75" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND3" gate="1" x="76.2" y="27.94" smashed="yes">
 <attribute name="VALUE" x="73.66" y="25.4" size="1.778" layer="96"/>
@@ -1543,10 +1533,6 @@ ver 1.0</text>
 <pinref part="GND2" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R3" gate="G$1" pin="1"/>
-<pinref part="GND3" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="GND4" gate="1" pin="GND"/>
 <pinref part="C8" gate="G$1" pin="2"/>
 <wire x1="83.82" y1="30.48" x2="83.82" y2="33.02" width="0.1524" layer="91"/>
@@ -1642,33 +1628,27 @@ ver 1.0</text>
 <pinref part="C10" gate="G$1" pin="2"/>
 <pinref part="GND22" gate="1" pin="GND"/>
 </segment>
-</net>
-<net name="N$1" class="0">
 <segment>
-<pinref part="IC3" gate="G$1" pin="BOOT0"/>
-<pinref part="R6" gate="G$1" pin="2"/>
+<pinref part="GND3" gate="1" pin="GND"/>
+<pinref part="IC3" gate="G$1" pin="PB2/BOOT1"/>
+<wire x1="76.2" y1="30.48" x2="76.2" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="BOOT0" class="0">
 <segment>
-<pinref part="R6" gate="G$1" pin="1"/>
 <pinref part="R10" gate="G$1" pin="2"/>
 <wire x1="68.58" y1="25.4" x2="68.58" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="27.94" x2="68.58" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="27.94" x2="53.34" y2="27.94" width="0.1524" layer="91"/>
 <junction x="68.58" y="27.94"/>
 <label x="55.88" y="27.94" size="1.778" layer="95"/>
+<pinref part="IC3" gate="G$1" pin="BOOT0"/>
+<wire x1="68.58" y1="27.94" x2="68.58" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="233.68" y1="55.88" x2="215.9" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="CN4" gate="G$1" pin="4"/>
 <label x="223.52" y="55.88" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="IC3" gate="G$1" pin="PB2/BOOT1"/>
-<pinref part="R3" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$3" class="0">
