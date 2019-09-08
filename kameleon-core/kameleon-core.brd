@@ -1000,13 +1000,13 @@ design rules under a new name.</description>
 <element name="CN1" library="Kameleon" package="1050170001" value="USB" x="11.43" y="33.85" smashed="yes">
 <attribute name="NAME" x="11.43" y="35.755" size="1.27" layer="25" align="center"/>
 </element>
-<element name="CN3" library="Kameleon" package="1X13" value="LEFT" x="2.54" y="19.05" smashed="yes" rot="R270">
-<attribute name="NAME" x="4.3688" y="34.3662" size="1.27" layer="25" ratio="10" rot="R270"/>
-<attribute name="VALUE" x="-0.635" y="34.29" size="1.27" layer="27" rot="R270"/>
+<element name="CN3" library="Kameleon" package="1X13" value="LEFT" x="2.54" y="19.05" smashed="yes" rot="MR270">
+<attribute name="NAME" x="0.7112" y="34.3662" size="1.27" layer="26" ratio="10" rot="MR270"/>
+<attribute name="VALUE" x="5.715" y="34.29" size="1.27" layer="28" rot="MR270"/>
 </element>
-<element name="CN4" library="Kameleon" package="1X13" value="RIGHT" x="20.32" y="19.05" smashed="yes" rot="R270">
-<attribute name="NAME" x="22.1488" y="34.3662" size="1.27" layer="25" ratio="10" rot="R270"/>
-<attribute name="VALUE" x="17.145" y="34.29" size="1.27" layer="27" rot="R270"/>
+<element name="CN4" library="Kameleon" package="1X13" value="RIGHT" x="20.32" y="19.05" smashed="yes" rot="MR270">
+<attribute name="NAME" x="18.4912" y="34.3662" size="1.27" layer="26" ratio="10" rot="MR270"/>
+<attribute name="VALUE" x="23.495" y="34.29" size="1.27" layer="28" rot="MR270"/>
 </element>
 <element name="CN5" library="Kameleon" package="1X04" value="SWD" x="11.43" y="1.905" smashed="yes" rot="R180">
 <attribute name="NAME" x="15.3162" y="0.0762" size="1.27" layer="25" ratio="10" rot="R180"/>
@@ -1263,7 +1263,7 @@ design rules under a new name.</description>
 <wire x1="14.4525" y1="8.3875" x2="12.68" y2="10.16" width="0.254" layer="1"/>
 <wire x1="8.918125" y1="19.446875" x2="11.033125" y2="19.446875" width="0.4064" layer="16"/>
 <wire x1="19.05" y1="27.94" x2="19.05" y2="29.21" width="0.4064" layer="16"/>
-<wire x1="19.05" y1="29.21" x2="20.32" y2="29.21" width="0.4064" layer="16"/>
+<wire x1="19.05" y1="29.21" x2="20.32" y2="29.21" width="0.4064" layer="1"/>
 <wire x1="12.68" y1="10.16" x2="14.525625" y2="10.16" width="0.4064" layer="16"/>
 <wire x1="14.525625" y1="10.16" x2="14.525625" y2="2.619375" width="0.4064" layer="16"/>
 <wire x1="14.525625" y1="2.619375" x2="15.24" y2="1.905" width="0.4064" layer="16"/>
