@@ -1152,10 +1152,10 @@ DIN A4, landscape with location and doc. field</description>
 <part name="+3V9" library="supply1" deviceset="+3V3" device=""/>
 <part name="R9" library="Kameleon" deviceset="RES" device="" value="22"/>
 <part name="R8" library="Kameleon" deviceset="RES" device="" value="22"/>
-<part name="R11" library="Kameleon" deviceset="RES" device="" value="10K"/>
-<part name="R12" library="Kameleon" deviceset="RES" device="" value="10K"/>
-<part name="R13" library="Kameleon" deviceset="RES" device="" value="10K"/>
-<part name="R14" library="Kameleon" deviceset="RES" device="" value="10K"/>
+<part name="R11" library="Kameleon" deviceset="RES" device="" value="NC"/>
+<part name="R12" library="Kameleon" deviceset="RES" device="" value="NC"/>
+<part name="R13" library="Kameleon" deviceset="RES" device="" value="NC"/>
+<part name="R14" library="Kameleon" deviceset="RES" device="" value="NC"/>
 <part name="+3V10" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V11" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V12" library="supply1" deviceset="+3V3" device=""/>
