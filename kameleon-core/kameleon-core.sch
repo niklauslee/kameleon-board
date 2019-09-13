@@ -1228,8 +1228,8 @@ RST
 17
 18
 19</text>
-<text x="187.96" y="12.7" size="5.08" layer="94" align="center">카멜레온
-ver 1.0</text>
+<text x="187.96" y="12.7" size="5.08" layer="94" align="center">Kameleon core
+ver 1.0.0</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
